@@ -1,0 +1,64 @@
+/* H3 de article section */
+/*titulo seccForm*/
+/*tablsa*/
+/*pag 404*/
+.boton {
+  width: 80px;
+  height: 30px;
+  border: 1px solid #170f86;
+  border-radius: 3px;
+  margin: 10px; }
+  .boton--colorOscuro {
+    color: #73a9d8;
+    background-color: #264c6e; }
+  .boton--colorClaro {
+    color: #264c6e;
+    background-color: #73a9d8; }
+
+.seccFoto__articulo .seccFoto__tituloTres {
+  display: inline-block; }
+
+.futer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .futer .footer__item--margen {
+    margin: 10px; }
+
+.seccForm .seccForm__tituloDos {
+  color: grey; }
+  .seccForm .seccForm__tituloDos--fuente {
+    font-family: "Josefin Sans", sans-serif; }
+  .seccForm .seccForm__tituloDos--espacio {
+    letter-spacing: 2px; }
+  .seccForm .seccForm__tituloDos--padd {
+    padding: 20px 0px 15px 0px; }
+
+.seccFotoForm, .seccDibujoForm, .seccFormForm {
+  padding: 10px;
+  grid-template-columns: 20% 70%; }
+
+th {
+  background-color: #5f5a5a;
+  color: white;
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif; }
+
+td {
+  padding: 10px; }
+
+.tituloDescripcion {
+  font-family: "Josefin Sans" sans-serif;
+  color: #ebb93d;
+  font-size: 30px;
+  font-weight: 300; }
+
+.notF {
+  display: flex;
+  height: 750px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #af6b6b;
+  color: #aabcca; }

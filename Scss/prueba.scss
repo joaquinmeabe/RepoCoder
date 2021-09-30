@@ -1,0 +1,134 @@
+@import "variables";
+
+.boton{
+
+    width: $ancho;
+    height: $alto;
+    border: $borde;
+    border-radius: $esquinas;
+    margin: $margenX;
+    
+
+        &--colorOscuro{
+
+            color: $colorClaro;
+            background-color: $colorOscuro;
+
+        }
+
+        &--colorClaro{
+
+            color: $colorOscuro;
+            background-color: $colorClaro;
+
+        }
+        
+
+
+}
+
+.seccFoto__articulo{
+
+    .seccFoto__tituloTres{
+
+        display: $bloque;
+    }
+}
+
+.futer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .footer__item{
+       
+        &--margen{
+            margin: $margenX;
+        }
+    }
+
+}
+
+.seccForm{
+
+
+    .seccForm__tituloDos{
+
+       
+        color: grey;
+        
+                &--fuente{
+                font-family: $fuenteFlia;
+            }
+
+                &--espacio{
+                    
+                    letter-spacing: $espaciado;
+            }
+            &--padd{
+                padding: $pad;
+            }
+
+    }
+
+   
+}
+
+.seccFotoForm{
+
+                padding: $padTab;
+                grid-template-columns: $gridTab;
+                
+}
+.seccDibujoForm {
+
+    @extend.seccFotoForm;
+
+}
+
+.seccFormForm{
+
+    @extend.seccFotoForm;
+}
+
+th{
+    background-color: $fondoOscuro;
+    color: $fondoClaro;
+    padding: $padTab;
+    font-family: $fuenteFlia;
+
+}
+td{
+    padding: $padTab;
+}
+
+@mixin fuenteForm ($color , $tamFont , $bold, $family) {
+
+    font-family: $family;
+    color:$color;
+    font-size: $tamFont;
+    font-weight: $bold;
+
+    
+}
+
+.tituloDescripcion{
+
+    @include fuenteForm( #ebb93d, 30px , 300, 'Josefin Sans' sans-serif)
+}
+
+.notF{
+
+    display: $dFlex;
+    height: $alto404;
+    text-align: $texAlig;
+    justify-content: $fJusCen;
+    flex-direction: $fDir;
+    background-color: $colorB;
+    color: $colorA;
+    
+}
+
+
+
