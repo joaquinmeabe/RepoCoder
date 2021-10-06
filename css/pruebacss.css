@@ -1,6 +1,6 @@
 /* H3 de article section */
 /*titulo seccForm*/
-/*tablsa*/
+/*tabla*/
 /*pag 404*/
 .boton {
   width: 80px;
@@ -62,3 +62,31 @@ td {
   flex-direction: column;
   background-color: #af6b6b;
   color: #aabcca; }
+
+header {
+  background-color: #aabcca;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between; }
+
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #af6b6b;
+  font-weight: 300; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 20px 0px 15px 0px; }
+
+header img {
+  width: 80px; }
+
+footer img {
+  width: auto; }

@@ -4,11 +4,20 @@ $colorA:rgb(170, 188, 202);
 $colorB:rgb(175, 107, 107);
 $borde: 1px solid rgb(23, 15, 134);
 $ancho: 80px;
+$anchoTotal:100%;
+$anchoAuto:auto;
 $alto: 30px;
+$altoUno:100px;
 $fondoClaro: white;
 $fondoOscuro: rgb(95, 90, 90);
 $esquinas:3px;
 $margenX:10px;
+$posicionUno:fixed;
+$zUno:1;
+$tamFueUno:30px;
+$espFuno:300;
+$espFdos:500;
+
 
 /* H3 de article section */
 
@@ -20,7 +29,7 @@ $espaciado: 2px;
 $pad: 20px 0px 15px 0px;
 
 
-/*tablsa*/
+/*tabla*/
 $padTab: 10px;
 $gridTab: 20% 70%;
 
@@ -28,6 +37,7 @@ $gridTab: 20% 70%;
 $dFlex:flex;
 $fDir:column;
 $fJusCen:center;
+$justCSB:space-between;
 $texAlig:center;
 $alto404:750px;
 

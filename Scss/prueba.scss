@@ -130,5 +130,41 @@ td{
     
 }
 
+header{
+
+    background-color: $colorA;
+    height: $altoUno;
+    position: $posicionUno;
+    width: $anchoTotal;
+    z-index: $zUno;
+    display: $dFlex;
+    justify-content: $justCSB;
+}
+
+h1{
+
+    font-family: $fuenteFlia;
+    color: $colorB;
+    font-weight: $espFuno;
+}
+h2{
+    @extend h1;
+    font-size: $tamFueUno;
+    
+
+}
+h3{
+    @extend h1;
+    font-weight: $espFdos;
+    letter-spacing: $espaciado;
+    padding: $pad;
+}
+header img{
+    width: $ancho;
+}
+footer img{
+    width: $anchoAuto;
+}
+
 
 
