@@ -1,7 +1,21 @@
-/* H3 de article section */
-/*titulo seccForm*/
-/*tabla*/
-/*pag 404*/
+@charset "UTF-8";
+/*colores*/
+/*bordes*/
+/*anchos*/
+/*altos*/
+/*fondos*/
+/*esquinas*/
+/*margenes*/
+/*positions*/
+/*z-index*/
+/*tamaños fuentes*/
+/*espesor fuentes*/
+/*displays*/
+/*prop flex*/
+/*fuentes*/
+/*espaciados*/
+/*padding*/
+/*alinear y justif texto*/
 .boton {
   width: 80px;
   height: 30px;
@@ -72,7 +86,7 @@ header {
   display: flex;
   justify-content: space-between; }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Josefin Sans", sans-serif;
   color: #af6b6b;
   font-weight: 300; }
@@ -85,8 +99,34 @@ h3 {
   letter-spacing: 2px;
   padding: 20px 0px 15px 0px; }
 
+h4 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 20px 0px 15px 0px;
+  color: gray; }
+
+p {
+  font-family: "Roboto", sans-serif; }
+
 header img {
   width: 80px; }
 
 footer img {
   width: auto; }
+
+main {
+  position: relative;
+  display: grid;
+  top: 90px; }
+
+ul {
+  display: flex;
+  flex-wrap: wrap; }
+
+li {
+  font-family: "Roboto", sans-serif;
+  color: indianred; }
+
+table {
+  font-family: "Roboto", sans-serif;
+  border: 1px solid; }

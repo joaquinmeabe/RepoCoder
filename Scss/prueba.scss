@@ -159,11 +159,39 @@ h3{
     letter-spacing: $espaciado;
     padding: $pad;
 }
+h4{
+    @extend h1;
+    font-weight: $espFdos;
+    letter-spacing: $espaciado;
+    padding: $pad;
+    color: $colorC;
+
+}
+p{
+    font-family: $fuenteFliaB;
+}
 header img{
     width: $ancho;
 }
 footer img{
     width: $anchoAuto;
+}
+main{
+    position: $positionDos;
+    display: $dGrid;
+    top: 90px;
+}
+ul{
+    display: $dFlex;
+    flex-wrap: $FWrap;
+}
+li{
+    font-family: $fuenteFliaB;
+    color: $colorD;
+}
+table{
+    font-family: $fuenteFliaB;
+    border: $bordeA;
 }
 
 
