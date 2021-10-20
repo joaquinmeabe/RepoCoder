@@ -1,4 +1,8 @@
-
+/*resets*/
+$texDecNo: none;
+$listaNo: none;
+$hereda:inherit;
+$cero: 0px;
 /*colores*/ 
 $colorOscuro:rgb(38, 76, 110);
 $colorClaro:rgb(115, 169, 216);
@@ -6,27 +10,39 @@ $colorA:rgb(170, 188, 202);
 $colorB:rgb(175, 107, 107);
 $colorC:gray;
 $colorD:indianred;
-
+$colorE:rgb(47, 47, 47);
+$colorF:rgb(75, 24, 24);
+$colorG:rgb(243, 239, 239);
+$colorH:rgb(139, 134, 82);
+$colorI:rgb(230, 232, 253);
+$colorH:rgb(240, 240, 240);
 
 
 /*bordes*/
 $borde: 1px solid rgb(23, 15, 134);
 $bordeA: 1px solid;
+$bordeDos: 2px solid rgb(146, 161, 172);
 
 
 /*anchos*/
 $ancho: 80px;
+$anchoA:70px;
+$anchoB:100px;
 $anchoTotal:100%;
 $anchoAuto:auto;
 
 
 /*altos*/
+$hAuto:auto;
 $alto: 30px;
 $altoUno:100px;
+$altoDos:80px;
+$altoTres: 50px;
 $alto404:750px;
 
 /*fondos*/
 $fondoClaro: white;
+$fonfoClaroA: rgb(224, 221, 221);
 $fondoOscuro: rgb(95, 90, 90);
 
 /*esquinas*/
@@ -34,46 +50,111 @@ $esquinas:3px;
 
 /*margenes*/
 $margenX:10px;
+$margenA:-4px 32% 10px 0px;
+$margenB:0px 0px 0px 20px;
+$margenC:20px 0px 0px 0px;
+$margenCam:30px;
+$margenCero:0px;
 
 /*positions*/
 $posicionUno:fixed;
 $positionDos:relative;
+$positionTres: absolute;
+$topUno: 0px;
+$topDos: 10px;
+$TopTres:40px;
+$botomUno: -98px;
+$Izq: 10%;
+$dirI: left;
 
 /*z-index*/
 $zUno:1;
 
 /*tamaños fuentes*/
 $tamFueUno:30px;
-
+$tamFuenDos:16px;
+$tamFueTres:14px;
 /*espesor fuentes*/
 $espFuno:300;
 $espFdos:500;
+$espFtres:400;
 
 /*displays*/
 $bloque: inline-block;
+$bloqueA:block;
 $gridTab: 20% 70%;
 $dFlex:flex;
 $fDir:column;
 $dGrid:grid;
+$overA:hidden;
 
 /*prop flex*/
 $FWrap:wrap;
+$fJusCen:center;
+$justCSB:space-between;
+$alinFi: flex-end;
 
-/*fuentes*/
+
+/*prop grid*/
+$gTemColA: repeat(3,1fr);
+$gTemColB:20% 30%; 
+$gTemRoA: 4% 48% 48%;
+$gTemRoB:7% 93%;
+$gTemRoC:50% 50%;;
+$gTemRoD:2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+$gTemArA: "header   header   header"
+          "content1 content2 content3"
+          "content4 content5 content6";
+
+$gTemArB: "header   header   header"
+          "content1 content2 content3";
+$gTemArC: "header content"
+          "header content";
+$gTemArD:"header"
+         "content1"
+         "content2"
+         "content3"
+         "content4"
+         "content5"
+         "content6";          
+$gTemArE:"header"
+         "content1";         
+$gAreaH: header;           
+
+$colGapA:30px;
+
+/*fuentes, tamaños transformaciones*/
 $fuenteFlia: 'Josefin Sans', sans-serif;
 $fuenteFliaB: 'Roboto', sans-serif;
+$fuenteA: 14px;
+$mayus: uppercase;
 
 /*espaciados*/
 $espaciado: 2px;
+$espacioadoA:1.5px;
 
 /*padding*/
 $pad: 20px 0px 15px 0px;
 $padTab: 10px;
+$padDos:30px;
+$padTres:5px 5px;
+$padRemA: .5rem;
 
 
 /*alinear y justif texto*/
-$fJusCen:center;
-$justCSB:space-between;
+
 $texAlig:center;
+
+/*transformaciones y transiciones*/
+$transA:scale(1,1.02);
+$transI:all 75ms;
+
+/*anchos pantalla*/
+$SrceenA:600px;
+$SrceenB:768px;
+$SrceenC:992px;
+$SrceenD:1200px;
+
+
 
 

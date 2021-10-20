@@ -130,6 +130,7 @@ td{
     
 }
 
+/* Estilos generales etiquetas */
 header{
 
     background-color: $colorA;
@@ -193,6 +194,280 @@ table{
     font-family: $fuenteFliaB;
     border: $bordeA;
 }
+th{
+    border: $borde;
+    background-color: $fondoOscuro;
+}
+td{
+    border: $borde;
+}
+form{
+    font-family: $fuenteFliaB;
+}
+header nav{
+    display: $bloque;
+    position: $positionTres;
+    top: $topUno;
+}
+footer{
+    background-color: $colorA;
+    position: $positionDos;
+    text-align: $texAlig;
+    bottom: $botomUno;
+}
+footer nav{
+    display: $bloque;
+    position: $positionDos;
+    top:$topDos;
+    border-top: $bordeDos;
+}
+section{
+    padding: $padDos;
+    display: $dFlex;
+}
+footer img{
+    justify-content: $texAlig;
+}
+.seccFoto article p{
+    font-family: $fuenteFliaB;
+    font-size: $fuenteA;
+}
+.seccFoto article h4{
+    background-color: $colorE;
+    margin: $margenA;
+    padding: $padTres;
+}.seccDibujo article h4{
+   
+    background-color: $colorF;
+    margin: $margenA;
+    padding: $padTres;
+}
+article{
+    height: $hAuto;
+}
 
+/* Fin estilos generales etiquetas */
+
+/* Estilos enlaces y hoover */
+
+li a{
+    color:$colorG;
+    text-decoration: $texDecNo;
+}
+li a:hover{
+    color:$colorB;
+}
+.seccFoto img:hover{
+    transform: $transA;
+    transition: $transI;
+}
+.seccDibujo img:hover{
+    transform: $transA;
+    transition: $transI;
+}
+
+/* Fin estilos enlaces y hoover */
+
+/*Estilos de clases */
+
+.tituloPagina{
+    text-transform: $mayus;
+    font-weight: $espFtres;
+    letter-spacing: $espacioadoA;
+    margin: $margenB;
+    text-align: center;
+    left: $Izq;
+    top: $TopTres;
+}
+.tituloFormacion{
+    color:$colorH;
+    margin: $margenC;
+}
+.tituloDescripcion{
+    color:$colorE;
+}
+.seccFoto{
+    background-color: $colorI;
+    display: $dGrid;
+    grid-template-columns: $gTemColA;
+    grid-template-rows: $gTemRoA;
+    grid-template-areas: $gTemArA;
+    column-gap: $colGapA; 
+}
+.seccFoto h2{
+    grid-area: $gAreaH;
+}
+.seccDibujo{
+    @extend.seccFoto;
+    background-color: rgb(253, 243, 230);
+}
+.seccDibujo h2{
+    grid-area: $gAreaH;
+}
+.seccForm{
+    @extend.seccFoto;
+    background-color: rgb(253, 230, 238);
+    grid-template-rows: $gTemRoB;
+    grid-template-areas: $gTemArB;
+       
+}
+.seccForm h2{
+    grid-area: $gAreaH;
+}
+.seccFormForm{
+    @extend.seccForm;
+    grid-template-columns: $gTemColB;
+    grid-template-rows: $gTemRoC;
+    grid-template-areas: $gTemArC;
+}
+.seccFotoForm{
+    @extend.seccForm;
+    @extend.seccFormForm;
+}
+.seccDibujoForm{
+    @extend.seccForm;
+    @extend.seccFormForm;  
+}
+.camarita{
+    height: $altoDos;
+    margin-left: $margenCam;
+}
+.camaritaFooter{
+   @extend.camarita;
+   margin: $margenX;
+}
+.btnForm {
+    background-color:$colorE;
+    border-color: $colorE;
+}
+/*.navNav{
+    background-color: $colorH!important;
+}*/
+.navbar-nav {
+    display: $dFlex;
+    flex-direction: $fDir;
+    padding-left: $margenCero;
+    margin-bottom: $margenCero;
+    margin-right: $margenX;
+    list-style: $listaNo;
+    align-content: $alinFi;
+    align-items: $alinFi;
+}
+.navbar {
+    position: $positionDos;
+    display: $dFlex;
+    flex-wrap: $FWrap;
+    align-items: $texAlig;
+    justify-content: $justCSB;
+    padding-top: $padRemA;
+    padding-bottom: $padRemA;
+}
+.navbar-light .navbar-toggler {
+    color: $colorA;
+    border-color: $colorA;
+}
+.container{
+  
+    width: $anchoTotal;
+}
+/*Fin estilos de clases */
+
+/*Estilos de Sub Meú*/
+
+.ulSub{
+    float: $dirI;
+    overflow: $overA;
+    display: $dFlex;
+}
+.ulSub a{
+        font-family: $hereda;
+        font-size: $hereda;
+        color: $colorH;
+        text-align: $dirI;
+        text-decoration: $texDecNo;
+}
+.ulSub-2{
+    font-size: $tamFuenDos;  
+    border: $texDecNo;
+    outline: $texDecNo;
+    color: $colorH;
+    background-color: $hereda;
+    margin: $margenCero;
+}
+.ulSub-3{
+    font-size: $tamFueTres;
+    display: $texDecNo;
+    position: $positionTres;
+    background-color: $colorA;
+    width: $ancho;
+    z-index: $zUno;
+}
+.ulSub-3 a {
+    float: $dirI;
+    color: $colorA;
+    width: $anchoA;
+    padding: $padTres;
+    text-decoration: $texDecNo;
+    border-bottom: $bordeDos;
+    border-left: $bordeDos;               
+}
+.ulSub-2:hover .ulSub-3{
+display: $bloqueA;
+}
+/*Fin estilos de Sub Meú*/
+
+/* Media Queries*/
+
+@media only screen and (max-width: $SrceenA){
+
+    header{
+        padding: $cero;
+    }
+
+    .tituloPagina{
+        font-size:$tamFuenDos;
+        display: $dFlex;
+        align-items: $texAlig;
+    }
+
+    .seccFoto{
+        grid-template-columns: $anchoTotal;
+        grid-template-rows: $gTemRoD;
+        grid-template-areas: $gTemArD;
+    }
+
+    .seccDibujo{
+        grid-template-columns: $anchoTotal;
+        grid-template-rows: $gTemRoD;
+        grid-template-areas: $gTemArD;
+    }
+
+    .seccForm{
+        grid-template-columns: $anchoTotal;
+        grid-template-rows: $gTemRoD;
+        grid-template-areas: $gTemArE;
+    }
+    .containerC{
+        display: $dFlex;
+        flex-wrap: $hereda;
+        align-items: $texAlig;
+        justify-content: $alinFi !important;
+        
+    }
+    .navNav .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        padding-right: 0px!important;
+    }
+    .navNav {
+        background-color: $colorA!important;
+        width: $anchoB;
+    }
+    .navbar-nav{
+        margin-top: $altoTres;
+    }
+
+
+}
+
+/* Fin media Queries*/
 
 

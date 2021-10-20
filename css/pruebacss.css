@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*resets*/
 /*colores*/
 /*bordes*/
 /*anchos*/
@@ -12,10 +13,13 @@
 /*espesor fuentes*/
 /*displays*/
 /*prop flex*/
-/*fuentes*/
+/*prop grid*/
+/*fuentes, tamaños transformaciones*/
 /*espaciados*/
 /*padding*/
 /*alinear y justif texto*/
+/*transformaciones y transiciones*/
+/*anchos pantalla*/
 .boton {
   width: 80px;
   height: 30px;
@@ -40,13 +44,13 @@
   .futer .footer__item--margen {
     margin: 10px; }
 
-.seccForm .seccForm__tituloDos {
+.seccForm .seccForm__tituloDos, .seccFotoForm .seccForm__tituloDos, .seccDibujoForm .seccForm__tituloDos, .seccFormForm .seccForm__tituloDos {
   color: grey; }
-  .seccForm .seccForm__tituloDos--fuente {
+  .seccForm .seccForm__tituloDos--fuente, .seccFormForm .seccForm__tituloDos--fuente, .seccFotoForm .seccForm__tituloDos--fuente, .seccDibujoForm .seccForm__tituloDos--fuente {
     font-family: "Josefin Sans", sans-serif; }
-  .seccForm .seccForm__tituloDos--espacio {
+  .seccForm .seccForm__tituloDos--espacio, .seccFormForm .seccForm__tituloDos--espacio, .seccFotoForm .seccForm__tituloDos--espacio, .seccDibujoForm .seccForm__tituloDos--espacio {
     letter-spacing: 2px; }
-  .seccForm .seccForm__tituloDos--padd {
+  .seccForm .seccForm__tituloDos--padd, .seccFormForm .seccForm__tituloDos--padd, .seccFotoForm .seccForm__tituloDos--padd, .seccDibujoForm .seccForm__tituloDos--padd {
     padding: 20px 0px 15px 0px; }
 
 .seccFotoForm, .seccDibujoForm, .seccFormForm {
@@ -77,6 +81,7 @@ td {
   background-color: #af6b6b;
   color: #aabcca; }
 
+/* Estilos generales etiquetas */
 header {
   background-color: #aabcca;
   height: 100px;
@@ -130,3 +135,237 @@ li {
 table {
   font-family: "Roboto", sans-serif;
   border: 1px solid; }
+
+th {
+  border: 1px solid #170f86;
+  background-color: #5f5a5a; }
+
+td {
+  border: 1px solid #170f86; }
+
+form {
+  font-family: "Roboto", sans-serif; }
+
+header nav {
+  display: inline-block;
+  position: absolute;
+  top: 0px; }
+
+footer {
+  background-color: #aabcca;
+  position: relative;
+  text-align: center;
+  bottom: -98px; }
+
+footer nav {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  border-top: 2px solid #92a1ac; }
+
+section {
+  padding: 30px;
+  display: flex; }
+
+footer img {
+  justify-content: center; }
+
+.seccFoto article p, .seccDibujo article p, .seccForm article p, .seccFormForm article p, .seccFotoForm article p, .seccDibujoForm article p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; }
+
+.seccFoto article h4, .seccDibujo article h4, .seccForm article h4, .seccFormForm article h4, .seccFotoForm article h4, .seccDibujoForm article h4 {
+  background-color: #2f2f2f;
+  margin: -4px 32% 10px 0px;
+  padding: 5px 5px; }
+
+.seccDibujo article h4 {
+  background-color: #4b1818;
+  margin: -4px 32% 10px 0px;
+  padding: 5px 5px; }
+
+article {
+  height: auto; }
+
+/* Fin estilos generales etiquetas */
+/* Estilos enlaces y hoover */
+li a {
+  color: #f3efef;
+  text-decoration: none; }
+
+li a:hover {
+  color: #af6b6b; }
+
+.seccFoto img:hover, .seccDibujo img:hover, .seccForm img:hover, .seccFormForm img:hover, .seccFotoForm img:hover, .seccDibujoForm img:hover {
+  transform: scale(1, 1.02);
+  transition: all 75ms; }
+
+.seccDibujo img:hover {
+  transform: scale(1, 1.02);
+  transition: all 75ms; }
+
+/* Fin estilos enlaces y hoover */
+/*Estilos de clases */
+.tituloPagina {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin: 0px 0px 0px 20px;
+  text-align: center;
+  left: 10%;
+  top: 40px; }
+
+.tituloFormacion {
+  color: #f0f0f0;
+  margin: 20px 0px 0px 0px; }
+
+.tituloDescripcion {
+  color: #2f2f2f; }
+
+.seccFoto, .seccDibujo, .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+  background-color: #e6e8fd;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 4% 48% 48%;
+  grid-template-areas: "header   header   header" "content1 content2 content3" "content4 content5 content6";
+  column-gap: 30px; }
+
+.seccFoto h2, .seccDibujo h2, .seccForm h2, .seccFormForm h2, .seccFotoForm h2, .seccDibujoForm h2 {
+  grid-area: header; }
+
+.seccDibujo {
+  background-color: #fdf3e6; }
+
+.seccDibujo h2 {
+  grid-area: header; }
+
+.seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+  background-color: #fde6ee;
+  grid-template-rows: 7% 93%;
+  grid-template-areas: "header   header   header" "content1 content2 content3"; }
+
+.seccForm h2, .seccFormForm h2, .seccFotoForm h2, .seccDibujoForm h2 {
+  grid-area: header; }
+
+.seccFotoForm, .seccDibujoForm, .seccFormForm {
+  grid-template-columns: 20% 30%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "header content" "header content"; }
+
+.camarita, .camaritaFooter {
+  height: 80px;
+  margin-left: 30px; }
+
+.camaritaFooter {
+  margin: 10px; }
+
+.btnForm {
+  background-color: #2f2f2f;
+  border-color: #2f2f2f; }
+
+/*.navNav{
+    background-color: $colorH!important;
+}*/
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  list-style: none;
+  align-content: flex-end;
+  align-items: flex-end; }
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
+
+.navbar-light .navbar-toggler {
+  color: #aabcca;
+  border-color: #aabcca; }
+
+.container {
+  width: 100%; }
+
+/*Fin estilos de clases */
+/*Estilos de Sub Meú*/
+.ulSub {
+  float: left;
+  overflow: hidden;
+  display: flex; }
+
+.ulSub a {
+  font-family: inherit;
+  font-size: inherit;
+  color: #f0f0f0;
+  text-align: left;
+  text-decoration: none; }
+
+.ulSub-2 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #f0f0f0;
+  background-color: inherit;
+  margin: 0px; }
+
+.ulSub-3 {
+  font-size: 14px;
+  display: none;
+  position: absolute;
+  background-color: #aabcca;
+  width: 80px;
+  z-index: 1; }
+
+.ulSub-3 a {
+  float: left;
+  color: #aabcca;
+  width: 70px;
+  padding: 5px 5px;
+  text-decoration: none;
+  border-bottom: 2px solid #92a1ac;
+  border-left: 2px solid #92a1ac; }
+
+.ulSub-2:hover .ulSub-3 {
+  display: block; }
+
+/*Fin estilos de Sub Meú*/
+/* Media Queries*/
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 0px; }
+  .tituloPagina {
+    font-size: 16px;
+    display: flex;
+    align-items: center; }
+  .seccFoto, .seccDibujo, .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-areas: "header" "content1" "content2" "content3" "content4" "content5" "content6"; }
+  .seccDibujo {
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-areas: "header" "content1" "content2" "content3" "content4" "content5" "content6"; }
+  .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-areas: "header" "content1"; }
+  .containerC {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end !important; }
+  .navNav .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-right: 0px !important; }
+  .navNav {
+    background-color: #aabcca !important;
+    width: 100px; }
+  .navbar-nav {
+    margin-top: 50px; } }
+
+/* Fin media Queries*/
