@@ -20,6 +20,29 @@
 /*alinear y justif texto*/
 /*transformaciones y transiciones*/
 /*anchos pantalla*/
+/* Inicio resets*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+ol, ul {
+  list-style: none;
+  padding-left: 0px; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0px; }
+
+img {
+  width: 100%; }
+
+iframe {
+  width: 100%; }
+
+hr {
+  margin: 0px; }
+
+/* Fin resets*/
 .boton {
   width: 80px;
   height: 30px;
@@ -367,5 +390,103 @@ li a:hover {
     width: 100px; }
   .navbar-nav {
     margin-top: 50px; } }
+
+@media only screen and (min-width: 600px) {
+  .tituloPagina {
+    font-size: 16px;
+    display: flex;
+    align-items: center; }
+  .seccFoto, .seccDibujo, .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-areas: "header" "content1" "content2" "content3" "content4" "content5" "content6"; }
+  .seccDibujo {
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-areas: "header" "content1" "content2" "content3" "content4" "content5" "content6"; }
+  .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-areas: "header" "content1"; }
+  .containerC {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end !important; }
+  .navNav, .navbar .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding: 0px !important;
+    background-color: #aabcca !important; }
+  .navNav {
+    width: 100px; }
+  .navbar-nav {
+    margin-top: 50px;
+    padding: 0px !important; } }
+
+@media only screen and (min-width: 768px) {
+  header {
+    justify-content: space-between; }
+  .tituloPagina {
+    font-size: 30px;
+    display: flex;
+    align-items: center; }
+  .seccFoto, .seccDibujo, .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-rows: 4% 32% 32% 32%;
+    grid-template-areas: "header header" "content1 content2" "content3 content4" "content5 content6"; }
+  .seccDibujo {
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-areas: "header" "content1" "content2" "content3" "content4" "content5" "content6"; }
+  .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+    grid-template-columns: 100%;
+    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-areas: "header" "content1"; }
+  .navNav {
+    background-color: #aabcca !important; }
+  .containerC {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end !important; }
+  .navNav {
+    background-color: #aabcca !important;
+    width: 100px; }
+  .navbar-nav {
+    margin-top: 50px; } }
+
+@media only screen and (min-width: 992px) {
+  .seccFoto, .seccDibujo, .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+    background-color: #e6e8fd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 4% 48% 48%;
+    grid-template-areas: "header   header   header" "content1 content2 content3" "content4 content5 content6";
+    column-gap: 30px; }
+  .seccFoto h2, .seccDibujo h2, .seccForm h2, .seccFormForm h2, .seccFotoForm h2, .seccDibujoForm h2 {
+    grid-area: header; }
+  .seccDibujo {
+    background-color: #fdf3e6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 4% 48% 48%;
+    grid-template-areas: "header   header   header" "content1 content2 content3" "content4 content5 content6";
+    column-gap: 30px; }
+  .seccDibujo h2 {
+    grid-area: header; }
+  .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
+    background-color: #fde6ee;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 7% 93%;
+    grid-template-areas: "header   header   header" "content1 content2 content3";
+    column-gap: 30px; }
+  .seccForm h2, .seccFormForm h2, .seccFotoForm h2, .seccDibujoForm h2 {
+    grid-area: header; }
+  .navNav {
+    background-color: #aabcc9 !important;
+    width: auto; }
+  .navbar-nav {
+    margin-top: 0px; } }
 
 /* Fin media Queries*/

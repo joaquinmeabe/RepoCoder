@@ -412,7 +412,7 @@ column-gap: 30PX;
 
 
 }
-*/
+
 
 @media only screen and (min-width: 600px){
 
@@ -460,7 +460,7 @@ column-gap: 30PX;
         justify-content: flex-end !important;
     }
     .navNav {
-        background-color: rgba(170, 188, 201)!important;
+        background-color: rgb(170, 188, 201)!important;
         width: 100px;
     }
 
@@ -481,7 +481,7 @@ column-gap: 30PX;
         font-size: 30px;
         display: flex;
         align-items: center;
-        /*position: absolute;*/
+       
     }
 
     .seccFoto{
@@ -588,3 +588,4 @@ column-gap: 30PX;
 
 }
 
+*/

@@ -1,5 +1,31 @@
 @import "variables";
 
+/* Inicio resets*/
+*{
+    margin: $cero;
+    padding: $cero;
+}
+ol, ul{
+    list-style: $listaNo;
+    padding-left: $cero;
+}
+table {
+	border-collapse: $borColl;
+	border-spacing: $cero;
+}
+img{
+    width: $anchoTotal;
+}
+iframe{
+    width: $anchoTotal;
+}
+hr{
+    margin: $cero;
+}
+
+
+/* Fin resets*/
+
 .boton{
 
     width: $ancho;
@@ -418,7 +444,7 @@ display: $bloqueA;
 
 /* Media Queries*/
 
-@media only screen and (max-width: $SrceenA){
+@media only screen and (max-width: $ScreenA){
 
     header{
         padding: $cero;
@@ -464,6 +490,154 @@ display: $bloqueA;
     .navbar-nav{
         margin-top: $altoTres;
     }
+
+
+}
+
+@media only screen and (min-width: $ScreenA){
+
+    .tituloPagina{
+         font-size:$tamFuenDos;
+         display: $dFlex;
+         align-items: $texAlig;
+    }
+
+    .seccFoto{
+        grid-template-columns: $anchoTotal;
+        grid-template-rows: $gTemRoD;
+        grid-template-areas: $gTemArD;
+    }
+
+    .seccDibujo{
+        grid-template-columns: $anchoTotal;
+        grid-template-rows: $gTemRoD;
+        grid-template-areas: $gTemArD;
+    }
+
+    .seccForm{
+        grid-template-columns: $anchoTotal;
+        grid-template-rows: $gTemRoD;
+        grid-template-areas: $gTemArE;
+                             ;
+    }
+    .containerC{
+        display: $dFlex;
+        flex-wrap: $hereda;
+        align-items: $texAlig;
+        justify-content: $alinFi !important;
+    }
+  
+    .navNav, .navbar .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+        padding: $margenCero!important;
+        background-color: $colorA!important;
+    }
+    .navNav{
+        width: $anchoB;
+    }
+
+    .navbar-nav{
+        margin-top: $altoTres;
+        padding: $margenCero!important;
+    }
+
+}
+@media only screen and (min-width: $ScreenB){
+
+    header{
+        justify-content: $justCSB;
+        
+    }
+  
+    .tituloPagina{
+        font-size: $tamFueUno;
+        display: $dFlex;
+        align-items: $texAlig;
+    }
+
+    .seccFoto{
+        grid-template-columns: $gTemRoC;
+        grid-template-rows: $gTemRoC;
+        grid-template-rows: $gTemRoF;
+        grid-template-areas:$gTemArF;
+    }
+
+    .seccDibujo{
+        grid-template-columns: $anchoTotal;
+        grid-template-rows: $gTemRoD;
+        grid-template-areas: $gTemArD;
+    }
+
+    .seccForm{
+        grid-template-columns: 100%;
+        grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+        grid-template-areas: $gTemArE;
+    }
+    .navNav {
+        background-color: $colorA!important;
+       
+    }
+    .containerC{
+        display: $dFlex;
+        flex-wrap: $hereda;
+        align-items: $texAlig;
+        justify-content: $alinFi !important;
+    }
+    .navNav {
+        background-color: $colorA!important;
+        width: $anchoB;
+    }
+    .navbar-nav{
+        margin-top: $altoTres;
+    }
+
+
+}
+
+
+@media only screen and (min-width: $ScreenC){
+
+    .seccFoto{
+        background-color: $colorI;
+        display: $dGrid;
+        grid-template-columns: $gTemColA;
+        grid-template-rows: $gTemRoA;
+        grid-template-areas: $gTemArA;
+        column-gap: $colGapA;                         
+    }
+    .seccFoto h2{
+        grid-area: $gAreaH;
+    }
+    
+    .seccDibujo{
+        background-color: $colorJ;
+        display: $dGrid;
+        grid-template-columns: $gTemColA;
+        grid-template-rows: 4% 48% 48%;
+        grid-template-areas: $gTemArA;
+        column-gap: $colGapA;    
+    }
+    .seccDibujo h2{
+        grid-area: $gAreaH;
+    }
+    .seccForm{
+        background-color: $colorK;
+        display: $dGrid;
+        grid-template-columns: $gTemColA;
+        grid-template-rows: 7% 93%;
+        grid-template-areas: $gTemArB;
+        column-gap: $colGapA;    
+    }
+    .seccForm h2{
+        grid-area: $gAreaH;
+    }
+    .navNav {
+        background-color: $colorL!important;
+        width: $anchoAuto;
+    }
+    .navbar-nav{
+        margin-top: $cero;
+    }
+   
 
 
 }
