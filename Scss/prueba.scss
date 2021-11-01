@@ -151,7 +151,7 @@ td{
     text-align: $texAlig;
     justify-content: $fJusCen;
     flex-direction: $fDir;
-    background-color: $colorB;
+    background-color: $colorB !important;
     color: $colorA;
     
 }
@@ -337,6 +337,13 @@ li a:hover{
     grid-template-areas: $gTemArB;
        
 }
+section{
+
+    .seccForm{
+            grid-template-columns: repeat(2, 1fr)!important;
+            grid-template-rows: 10% 90%!important;
+        }
+}
 .seccForm h2{
     grid-area: $gAreaH;
 }
@@ -470,7 +477,7 @@ display: $bloqueA;
 
     .seccForm{
         grid-template-columns: $anchoTotal;
-        grid-template-rows: $gTemRoD;
+        grid-template-rows: $gTemRoB;
         grid-template-areas: $gTemArE;
     }
     .containerC{
@@ -516,9 +523,8 @@ display: $bloqueA;
 
     .seccForm{
         grid-template-columns: $anchoTotal;
-        grid-template-rows: $gTemRoD;
+        grid-template-rows: $gTemRoB;
         grid-template-areas: $gTemArE;
-                             ;
     }
     .containerC{
         display: $dFlex;
@@ -529,7 +535,7 @@ display: $bloqueA;
   
     .navNav, .navbar .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
         padding: $margenCero!important;
-        background-color: $colorA!important;
+        background-color: $colorA;
     }
     .navNav{
         width: $anchoB;
@@ -568,8 +574,8 @@ display: $bloqueA;
     }
 
     .seccForm{
-        grid-template-columns: 100%;
-        grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+        grid-template-columns: $anchoTotal;
+        grid-template-rows: $gTemRoB;
         grid-template-areas: $gTemArE;
     }
     .navNav {
@@ -623,7 +629,7 @@ display: $bloqueA;
         background-color: $colorK;
         display: $dGrid;
         grid-template-columns: $gTemColA;
-        grid-template-rows: 7% 93%;
+        grid-template-rows: $gTemRoB;
         grid-template-areas: $gTemArB;
         column-gap: $colGapA;    
     }

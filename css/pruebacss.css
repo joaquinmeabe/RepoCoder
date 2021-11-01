@@ -101,7 +101,7 @@ td {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #af6b6b;
+  background-color: #af6b6b !important;
   color: #aabcca; }
 
 /* Estilos generales etiquetas */
@@ -264,8 +264,12 @@ li a:hover {
 
 .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
   background-color: #fde6ee;
-  grid-template-rows: 7% 93%;
+  grid-template-rows: 30% 70%;
   grid-template-areas: "header   header   header" "content1 content2 content3"; }
+
+section .seccForm, section .seccFormForm, section .seccFotoForm, section .seccDibujoForm {
+  grid-template-columns: repeat(2, 1fr) !important;
+  grid-template-rows: 10% 90% !important; }
 
 .seccForm h2, .seccFormForm h2, .seccFotoForm h2, .seccDibujoForm h2 {
   grid-area: header; }
@@ -376,7 +380,7 @@ li a:hover {
     grid-template-areas: "header" "content1" "content2" "content3" "content4" "content5" "content6"; }
   .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
     grid-template-columns: 100%;
-    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-rows: 30% 70%;
     grid-template-areas: "header" "content1"; }
   .containerC {
     display: flex;
@@ -406,7 +410,7 @@ li a:hover {
     grid-template-areas: "header" "content1" "content2" "content3" "content4" "content5" "content6"; }
   .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
     grid-template-columns: 100%;
-    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-rows: 30% 70%;
     grid-template-areas: "header" "content1"; }
   .containerC {
     display: flex;
@@ -415,7 +419,7 @@ li a:hover {
     justify-content: flex-end !important; }
   .navNav, .navbar .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     padding: 0px !important;
-    background-color: #aabcca !important; }
+    background-color: #aabcca; }
   .navNav {
     width: 100px; }
   .navbar-nav {
@@ -440,7 +444,7 @@ li a:hover {
     grid-template-areas: "header" "content1" "content2" "content3" "content4" "content5" "content6"; }
   .seccForm, .seccFormForm, .seccFotoForm, .seccDibujoForm {
     grid-template-columns: 100%;
-    grid-template-rows: 2% 16.33% 16.33% 16.33% 16.33% 16.33% 16.33%;
+    grid-template-rows: 30% 70%;
     grid-template-areas: "header" "content1"; }
   .navNav {
     background-color: #aabcca !important; }
@@ -478,7 +482,7 @@ li a:hover {
     background-color: #fde6ee;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 7% 93%;
+    grid-template-rows: 30% 70%;
     grid-template-areas: "header   header   header" "content1 content2 content3";
     column-gap: 30px; }
   .seccForm h2, .seccFormForm h2, .seccFotoForm h2, .seccDibujoForm h2 {
